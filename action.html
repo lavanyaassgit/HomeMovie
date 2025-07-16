@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+            background-color: rgb(46, 44, 44);
+        }
+        img{
+            height:400px;
+            margin: 25% 1%;
+            margin-left: 9%;
+        }
+        .div-whole{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            color: red;
+        }
+        .class1,.class3{
+                width:70%;
+                animation: zoomInOut 3s infinite ease-in-out;
+            }
+            @keyframes zoomInOut {
+            0%, 100% {
+            transform: scale(1);
+            }
+            50% {
+            transform: scale(1.2);
+            }
+            }
+        .class3{
+     display: flex;
+     justify-content: center;
+     align-items:center;
+     text-align: center;
+     font-size: large;
+     padding-left: 10px;
+     margin-top: 250px;
+     font-family: 'Courier New', Courier, monospace;
+    }
+    </style>
+    </head>
+      <body>
+        <div class="div-whole">
+        <div class="div-img">
+        <img class="class1" src="Thirller.jpg">
+        </div>
+         <div>
+        <p class="class3">All that we see or seem is but a dream within a dream.... </p>
+        </div>
+    </div>
+    
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {
+            background-color: rgb(240, 216, 216);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #e3e6ff, #f7d9e3, #d1f7e3, #f7f3d1);
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+    position: relative;
+    overflow-x: hidden;
+}
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+        img{
+            width: 500px;
+            height:400px;
+            margin: 6% 1%;
+            margin-left: 40%;
+            border: 6px solid;
+            border-radius: 10px;
+            border-color: rgb(132, 193, 200);
+        }
+        .div-whole{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .class1,.class3{
+                width:50%;
+                animation: zoomInOut 3s infinite ease-in-out;
+            }
+            @keyframes zoomInOut {
+            0%, 100% {
+            transform: scale(1);
+            }
+            50% {
+            transform: scale(1.2);
+            }
+            }
+        .class3{
+     display: flex;
+     justify-content: center;
+     align-items:center;
+     text-align: center;
+     font-size: large;
+     padding-left: 75px;
+     margin-top: 250px;
+     font-family: 'Courier New', Courier, monospace;
+    }
+    </style>
+    </head>
+      <body>
+        <div class="div-whole">
+        <div class="div-img">
+        <img class="class1" src="comedy.jpg">
+        </div>
+         <div>
+        <p class="class3">It is cheerful to God when you rejoice or laugh from the bottom of your heart...😂 </p>
+        </div>
+    </div>
+    
+    </body>
+</html>
